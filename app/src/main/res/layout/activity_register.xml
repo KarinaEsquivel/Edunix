@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/registro"
+    tools:context=".RegisterActivity">
+
+    <!-- Espacio para alinear los campos en el cartel -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="327dp" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="208dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="194dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:hint="Edad"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="123dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#FF0000"
+        android:text="Registrar"
+        android:textColor="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Etiqueta para el campo de edad -->
+
+    <!-- Campo para ingresar la edad -->
+
+</LinearLayout>

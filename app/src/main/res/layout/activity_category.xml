@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/categoria"
+    android:orientation="horizontal"
+    android:padding="28dp">
+
+    <Button
+        android:id="@+id/btnMath"
+        android:layout_width="wrap_content"
+        android:layout_height="111dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#2196F3"
+        android:text="Matemáticas"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/btnLogic"
+        android:layout_width="108dp"
+        android:layout_height="113dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#FF0000"
+        android:text="Lógica"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/btnLiterature"
+        android:layout_width="144dp"
+        android:layout_height="106dp"
+        android:layout_gravity="bottom|start"
+        android:backgroundTint="#4CAF50"
+        android:text="Literatura"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="ContentDescription,TouchTargetSizeCheck" />
+
+</LinearLayout>

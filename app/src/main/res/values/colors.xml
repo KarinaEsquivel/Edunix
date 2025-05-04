@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="colorMathButton">#FF4081</color> <!-- Color rosa para matemáticas -->
+        <color name="colorLogicButton">#4CAF50</color> <!-- Color verde para lógica -->
+        <color name="colorLiteratureButton">#2196F3</color> <!-- Color azul para literatura -->
+</resources>
