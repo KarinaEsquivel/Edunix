@@ -1,0 +1,13 @@
+# [Tu Nombre]
+- *Rol en el equipo*: (ej: Frontend)  
+
+### *Tareas realizadas*  
+- Ejemplo: "Diseñé la página de inicio"  
+- Ejemplo: "Arreglé el error de login"
+
+### *Tecnologías usadas*  
+- Ejemplo: React, Python, Git
+
+## *Commits Destacados*  
+- git commit -m "feat: añadido formulario de registro"  
+- git commit -m "fix: corregido error en validación de email"
