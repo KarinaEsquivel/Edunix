@@ -1,15 +1,12 @@
-# [Tu Nombre]
-- *Rol en el equipo*: (ej: Frontend)  
+# [Miriam Hitzel Mireles Ortiz]
+- *Rol en el equipo*: Lider de proyecto y DBA  
 
 ### *Tareas realizadas*  
-- Ejemplo: "Diseñé la página de inicio"  
-- Ejemplo: "Arreglé el error de login"
+- Realice la representacion grafica del diseño de login
+- Realice la representacion grafica del diseño de la categoria
+- Realice el boceto de las pantallas de la aplicacion
+- Realice la base de datos de la aplicacion
 
 ### *Tecnologías usadas*  
-- Ejemplo: React, Python, Git
+- Kotlin, Git
 
-## *Commits Destacados*  
-- git commit -m "feat: añadido formulario de registro"  
-- git commit -m "fix: corregido error en validación de email"
-
-- Holi
