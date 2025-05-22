@@ -1,18 +1,20 @@
-# [Kevin Antonio Avila Martinez]
+# [Kevin Antonio Ávila Martínez]
 - Rol en el equipo: Desarrollador 
 
 ### Tareas realizadas  
-- implemente la portada de la aplicacion
-- implemente la pestaña de inicio de secion
+- implemente la portada de la aplicación
+- implemente la pestaña de inicio de sesión
 - implemente la pestaña de registro
-- implemente la pestaña de las categorias
-- implemente la pestaña de lso juegos de matematias, logica ,lectura
+- implemente la pestaña de las categorías
+- implemente la pestaña de los juegos de matemáticas, lógica, lectura
 
-(realize la mayor parte del codigo de la aplicacion)
+(Realice la mayor parte del Código de la aplicación)
 
 ### Tecnologías usadas  
 - Kotlin, Git
 
 ## Commits Destacados  
-- añadi los botones de las pantallas"  
-- corregido error de la musica
+- añadí los botones de las pantallas"  
+- corregí el error de la música
+
+
