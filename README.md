@@ -31,6 +31,13 @@ Además, permite a los padres recibir reportes mensuales del progreso de sus hij
 
 ## Instalación
 
-1. Clona el repositorio:
-   
-   https://github.com/KarinaEsquivel/Edunix.git
+1. Asegúrate de tener instalado Git.  
+   Puedes descargarlo desde: https://git-scm.com/
+    y tener prebiamente Android studio instalado 
+
+3. Abre tu terminal (o Git Bash en Windows).
+
+4. Ejecuta el siguiente comando para clonar el repositorio:
+
+```bash
+https://github.com/KarinaEsquivel/Edunix.git 
