@@ -31,6 +31,12 @@ Además, permite a los padres recibir reportes mensuales del progreso de sus hij
 
 ## Instalación
 
-1. Clona el repositorio:
-   
-   https://github.com/KarinaEsquivel/Edunix.git
+1. Asegúrate de tener instalado Git.  
+   Puedes descargarlo desde: https://git-scm.com/
+
+2. Abre tu terminal (o Git Bash en Windows).
+
+3. Ejecuta el siguiente comando para clonar el repositorio:
+
+```bash
+https://github.com/KarinaEsquivel/Edunix.git 
