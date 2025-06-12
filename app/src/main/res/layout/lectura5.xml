@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondom">
+
+    <!-- Imagen en el centro -->
+
+    <!-- Botón "despertó" -->
+
+    <!-- Botón "mordió" -->
+
+    <!-- Botón "asustó" -->
+
+    <ImageView
+        android:id="@+id/imagePlaceholder"
+        android:layout_width="255dp"
+        android:layout_height="152dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/raton"
+        android:contentDescription="Imagen del ratón"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imagePlaceholder6"
+        android:layout_width="359dp"
+        android:layout_height="211dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/cuento2"
+        android:contentDescription="Imagen del ratón"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnDesperto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagePlaceholder"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="221dp"
+        android:backgroundTint="#4CAF50"
+
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Lo despertó" />
+
+    <Button
+        android:id="@+id/btnMordio"
+        android:layout_width="156dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/btnDesperto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#FF0000"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Lo mordió" />
+
+    <Button
+        android:id="@+id/btnAsusto"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMordio"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#2196F3"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text=" Lo asustó" />
+
+</RelativeLayout>

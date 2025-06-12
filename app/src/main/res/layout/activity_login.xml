@@ -7,7 +7,7 @@
     android:background="@drawable/inicio"
     tools:context=".LoginActivity">
 
-    <!-- Contenedor invisible que simula el cuadro blanco de la imagen -->
+    <!-- Contenedor del formulario de inicio de sesión -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/contenedorFormulario"
         android:layout_width="239dp"
@@ -20,8 +20,9 @@
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.994"> <!-- Ajusta esto según el tamaño visual del cuadro -->
+        app:layout_constraintVertical_bias="0.994">
 
+        <!-- Campo Nombre -->
         <EditText
             android:id="@+id/etNombre"
             android:layout_width="0dp"
@@ -29,6 +30,9 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="#FFFFFF"
             android:hint="Nombre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColorHint="#000000"
             android:inputType="textPersonName"
             android:padding="12dp"
             android:textColor="#000000"
@@ -36,6 +40,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Campo Correo -->
         <EditText
             android:id="@+id/etCorreo"
             android:layout_width="0dp"
@@ -43,6 +48,9 @@
             android:layout_marginTop="12dp"
             android:backgroundTint="#FFFFFF"
             android:hint="Correo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColorHint="#000000"
             android:inputType="textEmailAddress"
             android:padding="12dp"
             android:textColor="#000000"
@@ -50,15 +58,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/etNombre" />
 
+        <!-- Botón de iniciar sesión -->
+
+        <!-- Texto de registro -->
         <Button
             android:id="@+id/btnIniciarSesion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="48dp"
             android:backgroundTint="#FF0000"
             android:text="Iniciar Sesión"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/etCorreo" />
 
@@ -74,4 +86,5 @@
             app:layout_constraintTop_toBottomOf="@id/btnIniciarSesion" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

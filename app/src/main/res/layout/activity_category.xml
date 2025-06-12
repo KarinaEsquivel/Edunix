@@ -1,42 +1,66 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/categoria"
-    android:orientation="horizontal"
-    android:padding="28dp">
+    tools:context=".CategoryActivity">
+
+    <TextView
+        android:id="@+id/tvTotalScore"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="5dp"
+        android:background="#EEEEEE"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnMath"
-        android:layout_width="wrap_content"
-        android:layout_height="111dp"
-        android:layout_gravity="bottom"
+        android:layout_width="166dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/tvTotalScore"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="113dp"
         android:backgroundTint="#2196F3"
         android:text="Matemáticas"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        tools:ignore="ContentDescription" />
+        android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/btnLogic"
-        android:layout_width="108dp"
-        android:layout_height="113dp"
-        android:layout_gravity="bottom"
-        android:backgroundTint="#FF0000"
-        android:text="Lógica"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="28dp"
+        android:layout_marginBottom="16dp">
 
-    <Button
-        android:id="@+id/btnLiterature"
-        android:layout_width="144dp"
-        android:layout_height="106dp"
-        android:layout_gravity="bottom|start"
-        android:backgroundTint="#4CAF50"
-        android:text="Literatura"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        tools:ignore="ContentDescription,TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/btnLogic"
+            android:layout_width="133dp"
+            android:layout_height="78dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FF0000"
+            android:text="Lógica"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnLiterature"
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Literatura"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

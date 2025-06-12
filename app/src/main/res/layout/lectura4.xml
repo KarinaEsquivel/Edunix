@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondom">
+
+    <!-- Imagen -->
+
+    <!-- Botón "hermoso" -->
+
+    <!-- Botón "feo" -->
+
+    <!-- Botón "raro" -->
+
+    <ImageView
+        android:id="@+id/imagePlaceholder"
+        android:layout_width="338dp"
+        android:layout_height="219dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/cuento4"
+        android:contentDescription="Imagen"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imagePlaceholder5"
+        android:layout_width="203dp"
+        android:layout_height="129dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="89dp"
+        android:background="@drawable/pato"
+        android:contentDescription="Imagen"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnHermoso"
+        android:layout_width="167dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/imagePlaceholder"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#FF0000"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Es hermoso" />
+
+    <Button
+        android:id="@+id/btnFeo"
+        android:layout_width="144dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/btnHermoso"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="-137dp"
+        android:backgroundTint="#2196F3"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Es curioso" />
+
+    <Button
+        android:id="@+id/btnRaro"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFeo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="-117dp"
+        android:backgroundTint="#4CAF50"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Es extraño" />
+
+</RelativeLayout>

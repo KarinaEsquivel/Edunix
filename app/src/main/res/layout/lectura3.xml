@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondom">
+
+    <!-- Imagen en el centro -->
+
+    <!-- Botón Una pelota -->
+
+    <!-- Botón Una media sucia -->
+
+    <!-- Botón Un hueso -->
+
+    <ImageView
+        android:id="@+id/imagePlaceholder"
+        android:layout_width="334dp"
+        android:layout_height="269dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/cuento5"
+        android:contentDescription="Imagen"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imagePlaceholder4"
+        android:layout_width="241dp"
+        android:layout_height="132dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="71dp"
+        android:background="@drawable/inu"
+        android:contentDescription="Imagen"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnPelota"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagePlaceholder"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="109dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Una pelota" />
+
+    <Button
+        android:id="@+id/btnMedia"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnPelota"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-105dp"
+        android:layout_marginEnd="91dp"
+        android:backgroundTint="#FF0000"
+        android:text="Una media sucia" />
+
+    <Button
+        android:id="@+id/btnHueso"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPelota"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-97dp"
+        android:layout_marginEnd="65dp"
+        android:backgroundTint="#2196F3"
+        android:text="Un hueso" />
+
+</RelativeLayout>

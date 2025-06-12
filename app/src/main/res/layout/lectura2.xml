@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondom">
+
+    <!-- Imagen central -->
+
+    <!-- Botón: A su abuelita (correcta) -->
+
+    <!-- Botón: Al cazador -->
+
+    <!-- Botón: A su mamá -->
+
+    <ImageView
+        android:id="@+id/imagePlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/cuento3"
+        android:contentDescription="Imagen de Caperucita"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imagePlaceholder3"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/capa"
+        android:contentDescription="Imagen de Caperucita"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnAbuelita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagePlaceholder"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="-5dp"
+        android:backgroundTint="#2196F3"
+        android:text="A su abuelita" />
+
+    <Button
+        android:id="@+id/btnCazador"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnAbuelita"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Al cazador" />
+
+    <Button
+        android:id="@+id/btnMama"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnAbuelita"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="114dp"
+        android:backgroundTint="#FF0000"
+        android:text="A su mamá" />
+
+</RelativeLayout>

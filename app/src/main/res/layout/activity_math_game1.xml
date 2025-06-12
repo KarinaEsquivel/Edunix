@@ -1,72 +1,154 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center"
-    android:background="#F5F5F5">
+    android:background="@drawable/fondom"
+    android:padding="16dp">
 
-    <!-- Temporizador -->
+    <!-- Botón de música arriba a la derecha -->
+    <ImageButton
+        android:id="@+id/btnToggleMusic"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Botón de música"
+        android:src="@drawable/ic_music_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Instrucciones -->
     <TextView
-        android:id="@+id/tvTimer"
+        android:id="@+id/tvInstructions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Selecciona la imagen que corresponde al resultado de la operación."
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@id/btnToggleMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Operación matemática -->
+    <TextView
+        android:id="@+id/tvOperation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Tiempo: 60s"
-        android:textColor="#FF5722"
-        android:textSize="18sp"
-        tools:ignore="HardcodedText,TextContrastCheck" />
-
-    <!-- Pregunta matemática -->
-    <TextView
-        android:id="@+id/tvQuestion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="¿Cuánto es 5 + 3?"
-        android:textSize="22sp"
+        android:layout_marginTop="24dp"
+        android:text="3 + 5 = ?"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
         android:textStyle="bold"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/tvInstructions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Campo de respuesta -->
-    <EditText
-        android:id="@+id/etAnswer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@android:drawable/edit_text"
-        android:gravity="center"
-        android:hint="Escribe tu respuesta"
-        android:inputType="number"
-        android:padding="10dp"
-        android:textSize="18sp"
-        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize,TextContrastCheck" />
-
-    <!-- Botón de envío -->
-    <Button
-        android:id="@+id/btnSubmit"
+    <!-- Opciones de respuesta -->
+    <LinearLayout
+        android:id="@+id/layoutOpciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#4CAF50"
-        android:padding="10dp"
-        android:text="Responder"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvOperation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnUno"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:contentDescription="Número 1"
+            android:src="@drawable/uno" />
+
+        <ImageButton
+            android:id="@+id/btnDos"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:contentDescription="Número 2"
+            android:src="@drawable/dos" />
+
+        <ImageButton
+            android:id="@+id/btnTres"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:contentDescription="Número 3"
+            android:src="@drawable/tres" />
+    </LinearLayout>
 
     <!-- Puntuación -->
+
+    <!-- Temporizador -->
+
+    <!-- Mensaje final -->
     <TextView
         android:id="@+id/tvScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Puntuación: 0"
-        android:textSize="18sp"
-        android:textColor="#000000"
-        android:layout_marginTop="20dp"
-        tools:ignore="HardcodedText" />
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        ads:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutOpciones" />
 
+    <!-- Banner AdMob -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:text="Tiempo: 60s"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvScore" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/tvEndMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        ads:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5042761305073952/9805959360"
+        app:layout_constraintTop_toBottomOf="@id/tvEndMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondom">
+
+    <!-- Imagen -->
+
+    <!-- Botón Simpática -->
+
+    <!-- Botón Guapa -->
+
+    <!-- Botón Buena -->
+
+    <ImageView
+        android:id="@+id/imagePlaceholder2"
+        android:layout_width="197dp"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/gallinaimag"
+        android:contentDescription="Imagen"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imagePlaceholder"
+        android:layout_width="292dp"
+        android:layout_height="234dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/cuento1"
+        android:contentDescription="Imagen"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnSimpatica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagePlaceholder"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#4CAF50"
+        android:text= "Es Simpática" />
+
+    <Button
+        android:id="@+id/btnGuapa"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnSimpatica"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="134dp"
+        android:backgroundTint="#2196F3"
+        android:text="Es Guapa" />
+
+    <Button
+        android:id="@+id/btnBuena"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSimpatica"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="128dp"
+        android:backgroundTint="#FF0000"
+        android:text="Es Buena" />
+
+</RelativeLayout>
